@@ -1,0 +1,372 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    personal_details:
+      code: 1
+      name: presentación
+      description: | coordenadas de contacto y datos de presentación
+      questions:
+        name:
+          code: g1q1
+          type: textfield
+          sort_order: 1
+          question: | <b>nombre</b>
+          validation: validate_mandatory_question
+
+        email:
+          code: g1q2
+          type: textfield
+          sort_order: 2
+          question: | email
+          validation: validate_mandatory_question
+
+        web:
+          code: g1q3
+          type: textfield
+          sort_order: 3
+          question: | Web / Blog
+
+        vives_trabajas:
+          code: g1q4
+          type: textfield
+          sort_order: 4
+          question: | Vives / trabajas
+
+        nacimiento:
+          code: g1q5
+          type: textfield
+          sort_order: 5
+          question: | Año de nacimiento
+
+        genero:
+          code: g1q6
+          type: textfield
+          sort_order: 6
+          question: | Género
+
+        solo_colectivo:
+          code: g1q7
+          type: singlechoice
+          sort_order: 7
+          question: | ¿Trabajas solx o en colectivo?
+          answers:
+            individual:
+              code: 1
+              answer: | Proyecto individual
+              sort_order: 1
+              default: N
+            colectivo:
+              code: 2
+              answer: | Proyecto colectivo
+              sort_order: 2
+              default: N
+            ambos:
+              code: 3
+              answer: | ambos
+              sort_order: 3
+              default: N
+
+        ambito_trabajo:
+          code: g1q8
+          type: multiplechoice
+          sort_order: 8
+          question: | Actividad que desempeñas
+          answers:
+            arquitectura:
+              code: 1
+              answer: | Arquitectura
+              sort_order: 1
+              default: N
+            artes_plasticas:
+              code: 2
+              answer: | Artes Plasticas
+              sort_order: 2
+              default: N
+            cine_audiovisuales:
+              code: 3
+              answer: | Cine/Audiovisuales
+              sort_order: 3
+              default: N
+            comic_fanzine:
+              code: 4
+              answer: | Comic/Fanzine
+              sort_order: 4
+              default: N
+            danza:
+              code: 5
+              answer: | Danza
+              sort_order: 5
+              default: N
+            diseño_grafico:
+              code: 6
+              answer: | Diseño grafico
+              sort_order: 6
+              default: N
+            fotografia:
+              code: 7
+              answer: | Fotografia
+              sort_order: 7
+              default: N
+            literatura_poesia:
+              code: 8
+              answer: | Literatura/Poesia
+              sort_order: 8
+              default: N
+            musica:
+              code: 9
+              answer: | Música
+              sort_order: 9
+              default: N
+            programacion:
+              code: 10
+              answer: | Programación
+              sort_order: 10
+              default: N
+            netart:
+              code: 11
+              answer: | Netart
+              sort_order: 11
+              default: N
+            performance:
+              code: 12
+              answer: | Performance
+              sort_order: 12
+              default: N
+            street_art:
+              code: 13
+              answer: | Street Art
+              sort_order: 13
+              default: N
+            teatro:
+              code: 14
+              answer: | Teatro
+              sort_order: 14
+              default: N
+            otros:
+              code: 15
+              answer: | Otros
+              sort_order: 15
+              default: N
+              subquestions:
+                other_work:
+                    code: g1q8a15s1
+                    type: textfield
+                    sort_order: 1
+                    question:
+                    help: | especifica porfavor
+                    validation: validate_sub_question
+
+        cuando:
+          code: g1q9
+          type: textfield
+          sort_order: 9
+          question: | ¿Desde cuando?
+
+
+    tu:
+      code: 2
+      name: Tu mismx
+      description: | autoevaluación
+      questions:
+        libros:
+          code: g2q1
+          type: textbox
+          sort_order: 1
+          question: | <b>tres libros de referencia</b>
+
+        peliculas:
+          code: g2q2
+          type: textbox
+          sort_order: 2
+          question: | <b>tres películas de referencia</b>
+
+        musicx_grupo:
+          code: g2q3
+          type: textbox
+          sort_order: 3
+          question: | <b>tres músicxs / grupos de referencia</b>
+
+        movimientos_influyentes:
+          code: g2q4
+          type: textbox
+          sort_order: 4
+          question: | <b>tres movimientos culturales / sociales que te influyeron</b>
+
+        marcaron_cambiaron:
+          code: g2q5
+          type: textbox
+          sort_order: 5
+          question: | <b>otras cosas que te marcaron / conmovieron / cambiaron</b>
+
+        pos_trabajo:
+          code: g2q6
+          type: textbox
+          sort_order: 6
+          question: | <b>¿Qué te gusta de tu trabajo?</b>
+
+        neg_trabajo:
+          code: g2q7
+          type: textbox
+          sort_order: 7
+          question: | <b>¿Qué no te gusta de tu trabajo?</b>
+
+        difer_trabajo:
+          code: g2q8
+          type: singlechoice
+          sort_order: 8
+          question: | <b>¿Consideras que tu trabajo es diferente a otros trabajos?</b>
+          answers:
+            no:
+              code: 1
+              answer: | No
+              sort_order: 1
+              default: Y
+            si:
+              code: 2
+              answer: | Si
+              sort_order: 2
+              default: N
+              subquestions:
+                porque_difer:
+                    code: g2q8a2s1
+                    type: textbox
+                    sort_order: 1
+                    question: | ¿porque?
+                    validation: validate_sub_question
+
+        proyecto_pos:
+          code: g2q9
+          type: textbox
+          textbox_size: 50x10
+          sort_order: 9
+          question: | <b>¿proyecto + satisfactorio y porque?</b>
+
+        proyecto_neg:
+          code: g2q10
+          type: textbox
+          textbox_size: 50x10
+          sort_order: 10
+          question: | <b>¿proyecto + frustrante y porque?</b>
+
+        interes:
+          code: g2q11
+          type: textbox
+          textbox_size: 50x10
+          sort_order: 11
+          question: | <b>¿Qué es lo que mas te interesa en estos momentos y por qué?</b>
+
+        difusion:
+          code: g2q12
+          type: textbox
+          sort_order: 12
+          question: | <b>¿Cómo das a conocer tu trabajo?</b>
+
+        trayectoria:
+          code: g2q13
+          type: multiplechoice
+          sort_order: 13
+          question: | <b>¿Valora en una escala del 1 (mínima) a 5 (máxima) la relevancia los siguientes criterios en tu trayectoria profesional?</b>
+          answers:
+            talento:
+              code: 1
+              answer: | talento
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_talento:
+                    code: g2q13a1s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            conocimiento:
+              code: 2
+              answer: | conocimiento y habilidades
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_conocimiento:
+                    code: g2q13a2s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            relaciones:
+              code: 3
+              answer: | relaciones
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_relaciones:
+                    code: g2q13a3s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            reconocimiento:
+              code: 4
+              answer: | reconocimiento publico
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_reconocimiento:
+                    code: g2q13a4s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            inversion:
+              code: 5
+              answer: | inversión – dinero
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_inversion:
+                    code: g2q13a5s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            estrat_difusion:
+              code: 6
+              answer: | estrategias de difusión
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_difusion:
+                    code: g2q13a6s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            genero:
+              code: 7
+              answer: | género
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_genero:
+                    code: g2q13a7s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+            otros:
+              code: 8
+              answer: | otros
+              sort_order: 1
+              default: N
+              subquestions:
+                valor_otros:
+                    code: g2q13a8s1
+                    type: textfield
+                    textfield_size: 1x5
+                    sort_order: 1
+                    validation: validate_sub_question
+
+
+
