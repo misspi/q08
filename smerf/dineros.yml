@@ -1,0 +1,410 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    dineros:
+      code: 1
+      name: Dineros
+      questions:
+        estatuto_laboral:
+          code: g1q1
+          type: singlechoice
+          sort_order: 1
+          question: | Estatuto laboral:
+          answers:
+            empresario:
+              code: 1
+              answer: | empresario
+              sort_order: 1
+              default: N
+            empleada:
+              code: 2
+              answer: | empleado / asalariada
+              sort_order: 2
+              default: N
+            autonomo:
+              code: 3
+              answer: | autónomo
+              sort_order: 3
+              default: N
+            free_varios:
+              code: 4
+              answer: | free-lance autónoma	para varios empleadores
+              sort_order: 4
+              default: N
+            free_uno:
+              code: 5
+              answer: | free-lance autónoma	para empleador único / externo
+              sort_order: 5
+              default: N
+            free_negro:
+              code: 6
+              answer: | free-lance en negro
+              sort_order: 6
+              default: N
+            otros:
+              code: 7
+              answer: | otros
+              sort_order: 7
+              default: N
+              subquestions:
+                otro_estatuto:
+                  code: g1q1a7s1
+                  type: textfield
+                  sort_order: 1
+                  question: 
+                  validation: validate_sub_question
+
+        trabajo_unico:
+          code: g1q2
+          type: singlechoice
+          sort_order: 2
+          question: | El trabajo cultural que realizas es:
+          answers:
+            unica:
+              code: 1
+              answer: | tu única fuente de ingreso
+              sort_order: 1
+              default: N
+            una_mas:
+              code: 2
+              answer: | una más
+              sort_order: 2
+              default: N
+            ningun_ingreso:
+              code: 3
+              answer: | no recibo ningún ingreso por ello
+              sort_order: 3
+              default: N
+
+        tiempo_trabajo_cult:
+          code: g1q3
+          type: singlechoice
+          sort_order: 3
+          question: | ¿Cuánto tiempo promedio dedicas semanalmente a tu trabajo cultural?
+          answers:
+            menos_15:
+              code: 1
+              answer: | menos de 15 horas
+              sort_order: 1
+              default: N
+            15h_24h:
+              code: 2
+              answer: | entre 15 – 24 horas
+              sort_order: 2
+              default: N
+            25h_35h:
+              code: 3
+              answer: | entre 25 – 35 horas
+              sort_order: 3
+              default: N
+            36h_46h:
+              code: 4
+              answer: | entre 36 – 46 horas
+              sort_order: 4
+              default: N
+            mas_46h:
+              code: 5
+              answer: | más de 46 horas
+              sort_order: 5
+              default: N
+
+        dinero_trabajo_cult:
+          code: g1q4
+          type: singlechoice
+          sort_order: 4
+          question: | ¿Cuánto ganaste promedio al mes de tu trabajo cultural en el ultimo año?
+          answers:
+            menos_600:
+              code: 1
+              answer: | menos de 600€
+              sort_order: 1
+              default: N
+            600_1000:
+              code: 2
+              answer: | entre 600€ y 1000€
+              sort_order: 2
+              default: N
+            1000_1400:
+              code: 3
+              answer: | entre 1000€ y 1400€
+              sort_order: 3
+              default: N
+            1400_1800:
+              code: 4
+              answer: | entre 1400€ y 1800€
+              sort_order: 4
+              default: N
+            mas_1800:
+              code: 5
+              answer: | más de 1800€
+              sort_order: 5
+              default: N
+
+        capacidad_decision:
+          code: g1q5
+          type: singlechoice
+          sort_order: 5
+          question: | ¿Qué capacidad de decisión tienes con respecto a la producción que realizas?
+          answers:
+            total:
+              code: 1
+              answer: | Total por que soy yo quien la propone y quien la realiza
+              sort_order: 1
+              default: N
+            cliente:
+              code: 2
+              answer: | Depende de el cliente
+              sort_order: 2
+              default: N
+            limitada:
+              code: 3
+              answer: | Tengo capacidad de decisión limitada
+              sort_order: 3
+              default: N
+            ninguna:
+              code: 4
+              answer: | No tengo capacidad de decisión
+              sort_order: 4
+              default: N
+            horizontal:
+              code: 5
+              answer: | Realizo proyectos colectivos y las decisiones se toman de forma horizontal
+              sort_order: 5
+              default: N
+
+        dificultad_criar:
+          code: g1q6
+          type: textbox
+          sort_order: 6
+          question: | ¿Qué dificultades e impedimentos supone para tu sostenimiento y continuidad profesional la decisión de gestar y criar seres nuevos?
+
+        capacidad_decision:
+          code: g1q7
+          type: singlechoice
+          sort_order: 7
+          question: | ¿Además de tus proyectos por encargo desarrollas proyectos vocacionales?
+          answers:
+            si:
+              code: 1
+              answer: | si
+              sort_order: 1
+              default: N
+            no:
+              code: 2
+              answer: | no
+              sort_order: 2
+              default: N
+
+        capacidad_decision:
+          code: g1q8
+          type: multiplechoice
+          sort_order: 8
+          question: | ¿Cómo financias tus proyectos vocacionales?
+          answers:
+            familia:
+              code: 1
+              answer: | Familia / amigos
+              sort_order: 1
+              default: N
+            trabajo_propio:
+              code: 2
+              answer: | Trabajo propio
+              sort_order: 2
+              default: N
+            ayudas:
+              code: 3
+              answer: | Ayudas publicas
+              sort_order: 3
+              default: N
+            patrocinadores:
+              code: 4
+              answer: | Patrocinadores/entidades privadas
+              sort_order: 4
+              default: N
+            venta_obra:
+              code: 5
+              answer: | Venta de obras
+              sort_order: 5
+              default: N
+            otros:
+              code: 6
+              answer: | otros
+              sort_order: 6
+              default: N
+              subquestions:
+                otro_financiamento:
+                  code: g1q8a6s1
+                  type: textbox
+                  sort_order: 1
+                  question: | 
+                  validation: validate_sub_question
+
+        capacidad_decision:
+          code: g1q9
+          type: singlechoice
+          sort_order: 9
+          question: | ¿Has recibido financiación pública para tus proyectos en los últimos dos años?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                quien:
+                  code: g1q9a2s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿de quién?
+                  validation: validate_sub_question
+
+        problem_acceso_ayudas:
+          code: g1q10
+          type: multiplechoice
+          sort_order: 10
+          question: | ¿Cuáles crees que son los principales problemas para acceder a las ayudas/subvenciones públicas?
+          answers:
+            escasa_financiacion:
+              code: 1
+              answer: | Financiación escasa
+              sort_order: 1
+              default: N
+            escasez_oferta:
+              code: 2
+              answer: | Escasez de oferta
+              sort_order: 2
+              default: N
+            criterios:
+              code: 3
+              answer: | Criterios de selección
+              sort_order: 3
+              default: N
+            falta_info:
+              code: 4
+              answer: | Falta de información
+              sort_order: 4
+              default: N
+            falta_tiempo:
+              code: 5
+              answer: | Falta de tiempo
+              sort_order: 5
+              default: N
+            aislamiento:
+              code: 6
+              answer: | Aislamiento territorial
+              sort_order: 6
+              default: N
+            edad:
+              code: 7
+              answer: | Limitación por Edad
+              sort_order: 7
+              default: N
+            otros:
+              code: 8
+              answer: | otros
+              sort_order: 8
+              default: N
+              subquestions:
+                otro_financiamento:
+                  code: g1q10a8s1
+                  type: textbox
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        capacidad_decision:
+          code: g1q11
+          type: singlechoice
+          sort_order: 11
+          question: | ¿Has realizado durante el ultimo año trabajos/oficios remunerados no artísticos – culturales?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                cual:
+                  code: g1q11a2s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿cuál?
+                  validation: validate_sub_question
+
+        tiempo_trabajo:
+          code: g1q12
+          type: singlechoice
+          sort_order: 12
+          question: | ¿Cuánto tiempo promedio has dedicado semanalmente a estos trabajos remunerados ?
+          answers:
+            menos_15:
+              code: 1
+              answer: | menos de 15 horas
+              sort_order: 1
+              default: N
+            15h_24h:
+              code: 2
+              answer: | entre 15 – 24 horas
+              sort_order: 2
+              default: N
+            25h_35h:
+              code: 3
+              answer: | entre 25 – 35 horas
+              sort_order: 3
+              default: N
+            36h_46h:
+              code: 4
+              answer: | entre 36 – 46 horas
+              sort_order: 4
+              default: N
+            mas_46h:
+              code: 5
+              answer: | más de 46 horas
+              sort_order: 5
+              default: N
+
+        dinero_trabajo:
+          code: g1q13
+          type: singlechoice
+          sort_order: 13
+          question: | ¿Cuánto ganaste promedio al mes de este trabajo?
+          answers:
+            menos_600:
+              code: 1
+              answer: | menos de 600€
+              sort_order: 1
+              default: N
+            600_1000:
+              code: 2
+              answer: | entre 600€ y 1000€
+              sort_order: 2
+              default: N
+            1000_1400:
+              code: 3
+              answer: | entre 1000€ y 1400€
+              sort_order: 3
+              default: N
+            1400_1800:
+              code: 4
+              answer: | entre 1400€ y 1800€
+              sort_order: 4
+              default: N
+            mas_1800:
+              code: 5
+              answer: | más de 1800€
+              sort_order: 5
+              default: N

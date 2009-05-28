@@ -1,0 +1,390 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    habitat:
+      code: 1
+      name: Hábitat
+      questions:
+        vives:
+          code: g1q1
+          type: singlechoice
+          sort_order: 1
+          question: | Vives en:
+          answers:
+            capital_periferia:
+              code: 1
+              answer: | capital - periferia
+              sort_order: 1
+              default: N
+            capital_centro:
+              code: 2
+              answer: | capital - centro
+              sort_order: 2
+              default: N
+            ciudad:
+              code: 3
+              answer: | ciudad
+              sort_order: 3
+              default: N
+            pueblo:
+              code: 4
+              answer: | pueblo
+              sort_order: 4
+              default: N
+            otros:
+              code: 5
+              answer: | otros
+              sort_order: 5
+              default: N
+              subquestions:
+                porque:
+                  code: g1q1a5s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        fuentes_trabajo:
+          code: g1q2
+          type: textbox
+          sort_order: 2
+          question: | ¿Señala las 3 fuentes principales de trabajo en tu ciudad?
+
+        uso_infraestructuras:
+          code: g1q3
+          type: multiplechoice
+          sort_order: 3
+          question: | ¿Indica las infraestructuras culturales que usas más a menudo?
+          answers:
+            cine:
+              code: 1
+              answer: | cine
+              sort_order: 1
+              default: N
+            salas_concierto:
+              code: 2
+              answer: | salas de concierto
+              sort_order: 2
+              default: N
+            teatro:
+              code: 3
+              answer: | teatros
+              sort_order: 3
+              default: N
+            biblioteca:
+              code: 4
+              answer: | bibliotecas
+              sort_order: 4
+              default: N
+            salas_exposicion:
+              code: 5
+              answer: | salas exposiciones
+              sort_order: 5
+              default: N
+            espacios_reunion:
+              code: 6
+              answer: | espacios de reunión
+              sort_order: 6
+              default: N
+            museo:
+              code: 7
+              answer: | museos
+              sort_order: 7
+              default: N
+            internet:
+              code: 8
+              answer: | acceso público a internet
+              sort_order: 8
+              default: N
+            centro_social:
+              code: 9
+              answer: | centros sociales/espacios autogestionados
+              sort_order: 9
+              default: N
+
+        necesito_x_trabajo:
+          code: g1q4
+          type: textbox
+          sort_order: 4
+          question: | ¿Cuáles necesitas para tu trabajo?
+
+        vivienda:
+          code: g1q5
+          type: singlechoice
+          sort_order: 5
+          question: | Vivienda
+          answers:
+            alquiler:
+              code: 1
+              answer: | Alquiler
+              sort_order: 1
+              default: N
+            propiedad:
+              code: 2
+              answer: | Propiedad
+              sort_order: 2
+              default: N
+
+        vives_sola:
+          code: g1q6
+          type: singlechoice
+          sort_order: 6
+          question: | ¿Vives solx o compartidx?
+          answers:
+            sola:
+              code: 1
+              answer: | Solx
+              sort_order: 1
+              default: N
+            familia:
+              code: 2
+              answer: | Con mi familia
+              sort_order: 2
+              default: N
+            compartido:
+              code: 3
+              answer: | Compartidx
+              sort_order: 3
+              default: N
+              subquestions:
+                cuantas:
+                  code: g1q6a3s1
+                  type: textfield
+                  sort_order: 1
+                  question: | ¿cuántas personas?
+                  validation: validate_sub_question
+            otros:
+              code: 4
+              answer: | Otras opciones:
+              sort_order: 4
+              default: N
+              subquestions:
+                porque:
+                  code: g1q6a4s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        dinero_vivienda:
+          code: g1q7
+          type: singlechoice
+          sort_order: 7
+          question: | ¿Cuánto gastas al mes en vivienda?
+          answers:
+            menos_100:
+              code: 1
+              answer: | menos de 100€
+              sort_order: 1
+              default: N
+            100_200:
+              code: 2
+              answer: | 100€ - 200€
+              sort_order: 2
+              default: N
+            300_400:
+              code: 3
+              answer: | 300€ - 400€
+              sort_order: 3
+              default: N
+            400_500:
+              code: 4
+              answer: | 400€ - 500€
+              sort_order: 4
+              default: N
+            600_700:
+              code: 5
+              answer: | 600€ - 700€
+              sort_order: 5
+              default: N
+            mas_700:
+              code: 6
+              answer: | más de 700€
+              sort_order: 6
+              default: N
+              
+        espacio_trabajo:
+          code: g1q8
+          type: singlechoice
+          sort_order: 8
+          question: | ¿Dónde esta tu espacio de trabajo?
+          answers:
+            vivienda:
+              code: 1
+              answer: | En mi vivienda habitual
+              sort_order: 1
+              default: N
+            alquilo:
+              code: 2
+              answer: | Alquilo espacio de trabajo a parte
+              sort_order: 2
+              default: N
+            empresa:
+              code: 3
+              answer: | En la empresa/institución
+              sort_order: 3
+              default: N
+            otros:
+              code: 4
+              answer: | Otros:
+              sort_order: 4
+              default: N              
+              subquestions:
+                cuantas:
+                  code: g1q8a4s1
+                  type: textfield
+                  sort_order: 1
+                  question: | 
+                  validation: validate_sub_question
+
+        comparto_estudio:
+          code: g1q9
+          type: singlechoice
+          sort_order: 9
+          question: | ¿Compartes tu espacio de trabajo?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                cuantas:
+                  code: g1q9a2s1
+                  type: textfield
+                  sort_order: 1
+                  question: | ¿cuántas personas?
+                  validation: validate_sub_question
+            otros:
+              code: 3
+              answer: | Otros:
+              sort_order: 3
+              default: N
+              subquestions:
+                otros:
+                  code: g1q9a3s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        dinero_estudio:
+          code: g1q10
+          type: singlechoice
+          sort_order: 10
+          question: | ¿Cuánto gastas al mes en tu espacio de trabajo?
+          answers:
+            menos_100:
+              code: 1
+              answer: | menos de 100€
+              sort_order: 1
+              default: N
+            100_200:
+              code: 2
+              answer: | 100€ - 200€
+              sort_order: 2
+              default: N
+            300_400:
+              code: 3
+              answer: | 300€ - 400€
+              sort_order: 3
+              default: N
+            400_500:
+              code: 4
+              answer: | 400€ - 500€
+              sort_order: 4
+              default: N
+            600_700:
+              code: 5
+              answer: | 600€ - 700€
+              sort_order: 5
+              default: N
+            mas_700:
+              code: 6
+              answer: | más de 700€
+              sort_order: 6
+              default: N
+
+        representacion:
+          header: | Cuánto gastas mensualmente en:
+          code: g1q11
+          type: textfield
+          sort_order: 11
+          question: | representación/promoción
+
+        telecomunicaciones:
+          code: g1q12
+          type: textfield
+          sort_order: 12
+          question: | telecomunicaciones
+
+        formacion:
+          code: g1q13
+          type: textfield
+          sort_order: 13
+          question: | formación
+
+        viajes:
+          code: g1q14
+          type: textfield
+          sort_order: 14
+          question: | viajes/movilidad
+
+        materiales:
+          code: g1q15
+          type: textfield
+          sort_order: 15
+          question: | materiales
+
+        espacio_trabajo:
+          code: g1q16
+          type: singlechoice
+          sort_order: 16
+          question: | ¿Con qué frecuencia has realizado desplazamientos debido a tu trabajo en el ultimo año?
+          answers:
+            nunca:
+              code: 1
+              answer: | nunca
+              sort_order: 1
+              default: N
+            a_veces:
+              code: 2
+              answer: | a veces
+              sort_order: 2
+              default: N
+            habitualmente:
+              code: 3
+              answer: | habitualmente
+              sort_order: 3
+              default: N
+            imprescindible:
+              code: 4
+              answer: | imprescindible
+              sort_order: 4
+              default: N
+
+        comparto_estudio:
+          code: g1q17
+          type: singlechoice
+          sort_order: 17
+          question: | ¿Son suficientes tus ingresos para mantener tus gastos corrientes?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N

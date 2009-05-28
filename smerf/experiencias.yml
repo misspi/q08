@@ -1,0 +1,555 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    experiencias:
+      code: 1
+      name: Experiencias
+      questions:
+        estudios:
+          code: g1q1
+          type: singlechoice
+          sort_order: 1
+          question: | Nivel de estudios académicos:
+          answers:
+            primera_uno:
+              code: 1
+              answer: | primera etapa de educación secundaria
+              sort_order: 1
+              default: N
+            bachillerato:
+              code: 2
+              answer: | bachillerato
+              sort_order: 2
+              default: N
+            fp_medio:
+              code: 3
+              answer: | fp de grado medio
+              sort_order: 3
+              default: N
+            fp_superior:
+              code: 4
+              answer: | fp de grado superior
+              sort_order: 4
+              default: N
+            uni_completo:
+              code: 5
+              answer: | estudios universitarios completos
+              sort_order: 5
+              default: N
+            uni_incompleto:
+              code: 6
+              answer: | estudios universitarios incompletos
+              sort_order: 6
+              default: N
+            postgrado:
+              code: 7
+              answer: | cursos de postgrado
+              sort_order: 7
+              default: N
+            doctorado:
+              code: 8
+              answer: | doctorado
+              sort_order: 8
+              default: N
+
+        formacion_academica:
+          header: | ¿Para la actividad que realizas, qué tipo de formación ha sido imprescindible?
+          code: g1q9
+          type: singlechoice
+          sort_order: 9
+          question: | formación académica
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        transmision:
+          code: g1q10
+          type: singlechoice
+          sort_order: 10
+          question: | transmisión familiar o local
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        talleres_cursos:
+          code: g1q11
+          type: singlechoice
+          sort_order: 11
+          question: | en talleres / cursos técnicos
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        cualifica_empleo:
+          code: g1q12
+          type: singlechoice
+          sort_order: 12
+          question: | cualificación a través del empleo
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        afinidad_amistades:
+          code: g1q13
+          type: singlechoice
+          sort_order: 13
+          question: | aprendizaje en grupos de afinidad/amistades/gente cercana
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        internet:
+          code: g1q14
+          type: singlechoice
+          sort_order: 14
+          question: | internet
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        biblio_archivos:
+          code: g1q15
+          type: singlechoice
+          sort_order: 15
+          question: | bibliotecas publicas/centros de documentación/archivos institucionales
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        otros:
+          code: g1q16
+          type: singlechoice
+          sort_order: 16
+          question: | otros
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        otra_formacion:
+          code: g1q17
+          type: textfield
+          sort_order: 17
+          question:
+
+        formacion_continua:
+          code: g1q18
+          type: singlechoice
+          sort_order: 18
+          question: | ¿Para la actividad que realizas es imprescindible la formación continua?
+          answers:
+            si:
+              code: 1
+              answer: | si
+              sort_order: 1
+              default: N
+              subquestions:
+                porque_formacion_si:
+                  code: g1q18a1s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿porqué?
+                  validation: validate_sub_question
+            no:
+              code: 2
+              answer: | no
+              sort_order: 2
+              default: N
+              subquestions:
+                porque_formacion_no:
+                  code: g1q18a2s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿porqué?
+                  validation: validate_sub_question
+
+        que_formacion_cont:
+          code: g1q19
+          type: multiplechoice
+          sort_order: 19
+          question: | ¿En qué consiste esa formación continua?
+          answers:
+            cursos_talleres:
+              code: 1
+              answer: | cursos / talleres
+              sort_order: 1
+              default: N
+            intercambio_saberes:
+              code: 2
+              answer: | intercambiar saberes
+              sort_order: 2
+              default: N
+            estudiar_autodidacta:
+              code: 3
+              answer: | estudiar de forma autodidacta
+              sort_order: 3
+              default: N
+            consulta_internet:
+              code: 4
+              answer: | consultar internet
+              sort_order: 4
+              default: N
+            otros:
+              code: 5
+              answer: | otros:
+              sort_order: 5
+              default: N
+              subquestions:
+                otra_formacion:
+                  code: g1q19a5s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿cual?
+                  validation: validate_sub_question
+
+        tiempo_formacion:
+          code: g1q20
+          type: singlechoice
+          sort_order: 20
+          question: | ¿Cuánto tiempo dedicas semanalmente a la formación?
+          answers:
+            ningun_tiempo:
+              code: 1
+              answer: | Ningún tiempo
+              sort_order: 1
+              default: N
+            1_3_h:
+              code: 2
+              answer: | 1-3 horas
+              sort_order: 2
+              default: N
+            3_5_h:
+              code: 3
+              answer: | 3-5 horas
+              sort_order: 3
+              default: N
+            5_8_h:
+              code: 4
+              answer: | 5-8 horas
+              sort_order: 4
+              default: N
+            mas_8_h:
+              code: 5
+              answer: | más de 8 horas
+              sort_order: 5
+              default: N
+            dificil_cuantificar:
+              code: 6
+              answer: | Me es difícil cuantificarlo
+              sort_order: 6
+              default: N
+              subquestions:
+                porque_dificil:
+                  code: g1q20a6s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿porqué?
+                  validation: validate_sub_question
+
+        renumeracion_formacion:
+          code: g1q21
+          type: multiplechoice
+          sort_order: 21
+          question: | ¿Ese tiempo es renumerado, puedes señalarlo porcentualmente?
+          answers:
+            empresa:
+              code: 1
+              answer: | Es renumerado por la empresa
+              sort_order: 1
+              default: N
+              subquestions:
+                porcentaje:
+                  code: g1q21a1s1
+                  type: textfield
+                  textfield_size: 5x5
+                  sort_order: 1
+                  question:
+                  validation: validate_sub_question
+            becas:
+              code: 2
+              answer: | Es renumerado por becas
+              sort_order: 2
+              default: N
+              subquestions:
+                porcentaje:
+                  code: g1q21a2s1
+                  type: textfield
+                  textfield_size: 5x5
+                  sort_order: 1
+                  question:
+                  validation: validate_sub_question
+            clientes:
+              code: 3
+              answer: | Es renumerado por lo que le cobras a tus clientes
+              sort_order: 3
+              default: N
+              subquestions:
+                porcentaje:
+                  code: g1q21a3s1
+                  type: textfield
+                  textfield_size: 5x5
+                  sort_order: 1
+                  question:
+                  validation: validate_sub_question
+            renumerado_no:
+              code: 4
+              answer: | No es renumerado
+              sort_order: 4
+              default: N
+
+        formacion_trabajo:
+          code: g1q22
+          type: singlechoice
+          sort_order: 22
+          question: | ¿Consideras esa formación parte de tu trabajo?
+          answers:
+            si:
+              code: 1
+              answer: | si
+              sort_order: 1
+              default: N
+            no:
+              code: 2
+              answer: | no
+              sort_order: 2
+              default: N
+
+        renumeracion_formacion:
+          code: g1q23
+          type: multiplechoice
+          sort_order: 23
+          question: | ¿Cuál crees que son los principales problemas para acceder a la formación?
+          help: Registra las tres más importantes
+          answers:
+            financiacion:
+              code: 1
+              answer: | financiación
+              sort_order: 1
+              default: N
+            oferta:
+              code: 2
+              answer: | escasez de oferta
+              sort_order: 2
+              default: N
+            informacion:
+              code: 3
+              answer: | falta de información
+              sort_order: 3
+              default: N
+            tiempo:
+              code: 4
+              answer: | falta de tiempo
+              sort_order: 4
+              default: N
+            aislamiento:
+              code: 5
+              answer: | aislamiento territorial
+              sort_order: 5
+              default: N
+            otros:
+              code: 6
+              answer: | otros
+              sort_order: 6
+              default: N
+              subquestions:
+                otro_motivo:
+                  code: g1q23a6s1
+                  type: textfield
+                  sort_order: 1
+                  question:
+                  validation: validate_sub_question
+
+        propuesta_talleres:
+          code: g1q24
+          type: textbox
+          sort_order: 24
+          question: | ¿A qué talleres o ciclos te gustaría asistir o generar?
+          help: Especifica tres
+              

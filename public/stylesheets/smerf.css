@@ -2,13 +2,19 @@
 /* -------------------------------------------------------------------------- */
 
 body {
-background-color: #f7f7f7;
+background-color: #FFFFFF;
 font-size: 1em;
 font-family: Verdana, Helvetica, Arial, sans-serif;
-color:#564b47;
+color: #393b3c;
 padding:0;
 margin:0;
 }
+
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #eaf4fa;
+              }
 
 /* Smerf form */
 /* -------------------------------------------------------------------------- */
@@ -21,12 +27,12 @@ font-size: 0.8em;
 }
 
 form.smerfForm .checkbox input {
-margin-right: 3px;
+margin: 0px 3px 0px 10px;
 float: left;
 }
 
 form.smerfForm .radiobutton input {
-margin-right: 3px;
+margin: 0px 3px 0px 10px;
 float: left;
 }
 
@@ -35,7 +41,7 @@ width: 200px;
 display: inline; 
 }
 
-form.smerfForm textarea { }
+form.smerfForm textarea {margin: 5px 10px 5px 10px;}
 form.smerfForm .text input {margin: 5px 10px 5px 10px;}
 
 
@@ -49,25 +55,26 @@ form.smerfForm .smerfThankyou p {
 font-size: 12px;
 }
 
-
 /* Form Title */
-form.smerfForm h2 { 
+form.smerfForm h2 {
 font-size: 1.4em; 
 font-weight: bold; 
-padding: 5px 10px;
+padding: 30px 10px;
 margin:0;
-color: #264764;
-border-bottom: 1px solid #B8B8B8;
+color: #eaf4fa;
+background-color: #c5ced3;
+float: left;
 }
 
 /* Group Name */
-form.smerfForm h3 { 
-font-size: 1.2em; 
-font-weight: bold; 
+form.smerfForm h3 {
+font-size: 1.4em;
+font-weight: bold;
 font-style: italic;
-background-color : #EDE9C5;
-text-align: center;
-border: 1px #b7b7b7 solid;
+padding: 30px 30px 30px 10px;
+color: #474a4b;
+background-color: #c5ced3;
+text-align: right;
 }
 
 /* Group Description */
@@ -80,19 +87,19 @@ padding: 5px 10px;
 /* Question Heading (You can group questions under another heading) */
 form.smerfForm .smerfQuestionHeader p {
 font-weight: bold;
-background-color : #EDE9C5;
+background-color : #c5ced3;
 text-align: left;
-margin: 5px 10px 5px 10px;
-padding: 2px 2px;
+margin: 5px 0px 5px 0px;
+padding: 10px 10px;
 }
 
 /* Question */
 form.smerfForm .smerfQuestion p {
 font-weight: bold;
-background-color : #e0ebf1;
+background-color : #c5ced3;
 text-align: left;
-margin: 5px 10px 5px 10px;
-padding: 2px 2px;
+margin: 5px 0px 5px 0px;
+padding: 10px 10px;
 }	
 
 /* Subquestion */

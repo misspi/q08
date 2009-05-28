@@ -1,0 +1,138 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    autoria:
+      code: 1
+      name: Autoría
+      questions:
+        como_firmas:
+          code: g1q1
+          type: singlechoice
+          sort_order: 1
+          question: | ¿Cómo firmas tus trabajos?
+          answers:
+            no_firmo:
+              code: 1
+              answer: | No los suelo firmar
+              sort_order: 1
+              default: N
+            varios_nombres:
+              code: 2
+              answer: | Utilizo varios nombres
+              sort_order: 2
+              default: N
+            aka:
+              code: 3
+              answer: | Utilizo un aka
+              sort_order: 3
+              default: N
+            colectivo:
+              code: 4
+              answer: | Utilizo el nombre del colectivo
+              sort_order: 4
+              default: N
+            mi_nombre:
+              code: 5
+              answer: | Siempre utilizo mi nombre
+              sort_order: 5
+              default: N
+            empresa:
+              code: 6
+              answer: | No los firmo yo, los firma la empresa
+              sort_order: 6
+              default: N
+
+        motivo_firma:
+          code: g1q2
+          type: textbox
+          sort_order: 2
+          question: | ¿Por qué los firmas así?
+
+        uso_copyright:
+          code: g1q3
+          type: singlechoice
+          sort_order: 3
+          question: | ¿Has usado el copyright tradicional para algunos de tus proyectos?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                porque:
+                  code: g1q3a2s1
+                  type: textbox
+                  sort_order: 1
+                  question: | ¿describe por qué?
+                  validation: validate_sub_question
+
+        uso_licencia_abierta:
+          code: g1q4
+          type: singlechoice
+          sort_order: 4
+          question: | ¿Has utilizado algún tipo de licencia abierta (Creative Commons, Open Content…) para tus proyectos?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                cual:
+                  code: g1q4a2s1
+                  type: textfield
+                  sort_order: 1
+                  question: | ¿cuál?
+                  validation: validate_sub_question
+                porque:
+                  code: g1q4a2s2
+                  type: textbox
+                  sort_order: 2
+                  question: | ¿Si la has utilizado, por qué?
+                  validation: validate_sub_question
+
+        uso_licencia_abierta:
+          code: g1q5
+          type: singlechoice
+          sort_order: 5
+          question: | ¿Estas afiliado a alguna entidad de gestión de derechos de autor?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+              subquestions:
+                cual:
+                  code: g1q5a2s1
+                  type: textfield
+                  sort_order: 1
+                  question: | ¿cuál?
+                  validation: validate_sub_question
+                porque:
+                  code: g1q5a2s2
+                  type: textbox
+                  sort_order: 2
+                  question: | ¿por qué?
+                  validation: validate_sub_question
+

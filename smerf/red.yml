@@ -1,0 +1,211 @@
+---
+smerfform:
+  name: Cuestionario r08
+
+  group_sort_order_field: code
+
+  groups:
+    red:
+      code: 1
+      name: Red
+      questions:
+        uso_ordenador:
+          code: g1q1
+          type: singlechoice
+          sort_order: 1
+          question: | ¿Usas el ordenador en el desarrollo de tus proyectos?
+          answers:
+            no:
+              code: 1
+              answer: | no
+              sort_order: 1
+              default: N
+            si:
+              code: 2
+              answer: | si
+              sort_order: 2
+              default: N
+            otros:
+              code: 3
+              answer: | otros:
+              sort_order: 3
+              default: N
+              subquestions:
+                otros:
+                  code: g1q1a3s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        sistema_operativo:
+          code: g1q2
+          type: singlechoice
+          sort_order: 2
+          question: | ¿Con qué sistema operativo trabajas?
+          answers:
+            mac:
+              code: 1
+              answer: | MAC OS
+              sort_order: 1
+              default: N
+            windows:
+              code: 2
+              answer: | Windows
+              sort_order: 2
+              default: N
+            linux:
+              code: 3
+              answer: | GNU/Linux
+              sort_order: 3
+              default: N
+            otros:
+              code: 4
+              answer: | otros:
+              sort_order: 4
+              default: N
+              subquestions:
+                otros:
+                  code: g1q2a4s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        acceso_internet:
+          code: g1q3
+          type: singlechoice
+          sort_order: 3
+          question: | ¿Cómo accedes a internet?
+          answers:
+            casa:
+              code: 1
+              answer: | conexión en casa
+              sort_order: 1
+              default: N
+            ciber:
+              code: 2
+              answer: | ciber
+              sort_order: 2
+              default: N
+            trabajo:
+              code: 3
+              answer: | lugar de trabajo
+              sort_order: 3
+              default: N
+            otros:
+              code: 4
+              answer: | otros:
+              sort_order: 4
+              default: N
+              subquestions:
+                otros:
+                  code: g1q3a4s1
+                  type: textfield
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        tiempo_internet:
+          code: g1q4
+          type: singlechoice
+          sort_order: 4
+          question: | ¿Cuánto tiempo pasas al dia en internet?
+          answers:
+            menos_1:
+              code: 1
+              answer: | menos de una hora
+              sort_order: 1
+              default: N
+            1-2:
+              code: 2
+              answer: | entre una y dos h
+              sort_order: 2
+              default: N
+            3-4:
+              code: 3
+              answer: | entre tres y cuatro h
+              sort_order: 3
+              default: N
+            4-5:
+              code: 4
+              answer: | entre cuatro y cinco h
+              sort_order: 4
+              default: N
+            mas_5:
+              code: 5
+              answer: | más de cinco horas h
+              sort_order: 5
+              default: N
+
+        recursos_extraidos:
+          code: g1q5
+          type: textbox
+          sort_order: 5
+          question: | Señala los tres principales recursos que extraes de la web relacionado con tu trabajo
+                  
+        p2p:
+          code: g1q6
+          type: singlechoice
+          sort_order: 6
+          question: |  ¿Utilizas las redes p2p (emule, bittorrent etc.) para el desarrollo de tus proyectos?
+          answers:
+            habitual:
+              code: 1
+              answer: | habitualmente
+              sort_order: 1
+              default: N
+            ocasion:
+              code: 2
+              answer: | en ocasiones
+              sort_order: 2
+              default: N
+            nunca:
+              code: 3
+              answer: | nunca
+              sort_order: 3
+              default: N
+            no:
+              code: 4
+              answer: | no las conozco
+              sort_order: 4
+              default: N
+
+        recurso_copyright:
+          code: g1q7
+          type: singlechoice
+          sort_order: 7
+          question: | ¿Te impide la ley de propiedad intelectual el acceso a recursos necesarios para tu trabajo?
+          answers:
+            si:
+              code: 1
+              answer: | si
+              sort_order: 1
+              default: N
+            no_recurso_copyright:
+              code: 2
+              answer: | no utilizo recursos con copyright
+              sort_order: 2
+              default: N
+            no:
+              code: 3
+              answer: | no
+              sort_order: 3
+              default: N
+
+        difusion_trabajo_web:
+          code: g1q8
+          type: singlechoice
+          sort_order: 8
+          question: | ¿Se encuentra tu trabajo en la web?
+          answers:
+            si:
+              code: 1
+              answer: | si
+              sort_order: 1
+              default: N
+            no:
+              code: 2
+              answer: | no
+              sort_order: 2
+              default: N
