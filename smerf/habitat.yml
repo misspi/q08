@@ -128,6 +128,11 @@ smerfform:
               answer: | Propiedad
               sort_order: 2
               default: N
+            cesion:
+              code: 3
+              answer: | Cesión
+              sort_order: 3
+              default: N
 
         vives_sola:
           code: g1q6
@@ -223,15 +228,20 @@ smerfform:
               answer: | Alquilo espacio de trabajo a parte
               sort_order: 2
               default: N
-            empresa:
+            alquilo:
               code: 3
-              answer: | En la empresa/institución
+              answer: | Dispongo de un espacio de trabajo a parte cedido
               sort_order: 3
               default: N
-            otros:
+            empresa:
               code: 4
-              answer: | Otros:
+              answer: | En la empresa/institución
               sort_order: 4
+              default: N
+            otros:
+              code: 5
+              answer: | Otros:
+              sort_order: 5
               default: N              
               subquestions:
                 cuantas:

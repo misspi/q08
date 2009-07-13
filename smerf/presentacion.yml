@@ -112,58 +112,64 @@ smerfform:
           sort_order: 14
           question: | Fotografia
 
-        literatura_poesia:
+        gestion_cultural:
           code: g1q15
           type: textfield
           sort_order: 15
-          question: | Literatura/Poesia
+          question: | Gestión cultural
 
-        musica:
+        literatura_poesia:
           code: g1q16
           type: textfield
           sort_order: 16
-          question: | Música
+          question: | Literatura/Poesia
 
-        programacion:
+        musica:
           code: g1q17
           type: textfield
           sort_order: 17
-          question: | Programación
+          question: | Música
 
-        netart:
+        programacion:
           code: g1q18
           type: textfield
           sort_order: 18
-          question: | Netart
+          question: | Programación
 
-        performance:
+        netart:
           code: g1q19
           type: textfield
           sort_order: 19
-          question: | Performance
+          question: | Netart
 
-        street_art:
+        performance:
           code: g1q20
           type: textfield
           sort_order: 20
-          question: | Street Art
+          question: | Performance
 
-        teatro:
+        street_art:
           code: g1q21
           type: textfield
           sort_order: 21
+          question: | Street Art
+
+        teatro:
+          code: g1q22
+          type: textfield
+          sort_order: 22
           question: | Teatro
 
         otros:
-          code: 22
+          code: 23
           type: textfield
-          sort_order: 22
+          sort_order: 23
           question: | Otros
           
 
         cuando:
-          code: g1q22
+          code: g1q24
           type: textfield
-          sort_order: 22
+          sort_order: 24
           question: | ¿Desde cuando?
 

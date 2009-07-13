@@ -1,0 +1,871 @@
+---
+smerfform:
+  name: Cuestionario R08
+
+  group_sort_order_field: code
+
+  groups:
+    locomun:
+      code: 1
+      name: Lo Común
+      questions:
+        iniciativas_culturales:
+          code: g1q1
+          type: textbox
+          sort_order: 1
+          question: | Señala tres iniciativas culturales institucionales que conozcas
+          
+        acceso:
+          header: | Valora la relevancia de los siguientes objetivos de las políticas culturales:
+
+          code: g1q2
+          type: singlechoice
+          sort_order: 2
+          question: | Favorecer el acceso a los bienes culturales para toda la población
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+          
+        extender_capacidades:
+          code: g1q3
+          type: singlechoice
+          sort_order: 3
+          question: | Extender las capacidades creativas de la sociedad
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        generar_industria:
+          code: g1q4
+          type: singlechoice
+          sort_order: 4
+          question: | Generar una industria de futuro
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        crear_empleo:
+          code: g1q5
+          type: singlechoice
+          sort_order: 5
+          question: | Crear nuevos nichos de empleo
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        conservar:
+          code: g1q6
+          type: singlechoice
+          sort_order: 6
+          question: | Conservar el patrimonio cultural
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        otros:
+          code: g1q7
+          type: singlechoice
+          sort_order: 7
+          question: | otros
+          answers:
+            sin_relevancia:
+              code: 1
+              answer: | sin relevancia
+              sort_order: 1
+              default: N
+            poca_relevancia:
+              code: 2
+              answer: | poca relevancia
+              sort_order: 2
+              default: N
+            moderadamente_relevante:
+              code: 3
+              answer: | moderademente relevante
+              sort_order: 3
+              default: N
+            relevante:
+              code: 4
+              answer: | relevante
+              sort_order: 4
+              default: N
+            muy_relevante:
+              code: 5
+              answer: | muy relevante
+              sort_order: 5
+              default: N
+
+        otro_objetivo:
+          code: g1q8
+          type: textfield
+          sort_order: 8
+          question:
+
+        aumentar_subvenciones:
+          header: | Valora las siguientes medidas en materia de cultura:
+
+          code: g1q9
+          type: singlechoice
+          sort_order: 9
+          question: | Aumentar los recursos y canales de subvenciones
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        incentivar_inversion:
+          code: g1q10
+          type: singlechoice
+          sort_order: 10
+          question: | Incentivar la inversión privada y el apoyo empresarial
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        cesion_espacios:
+          code: g1q11
+          type: singlechoice
+          sort_order: 11
+          question: | Cesión en uso de edificios y equipamientos públicos para proyectos ciudadanos
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        presupuesto_participativo:
+          code: g1q12
+          type: singlechoice
+          sort_order: 12
+          question: | Presupuestos participativos en las áreas de cultura de las instituciones públicas
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        creacion_viveros:
+          code: g1q13
+          type: singlechoice
+          sort_order: 13
+          question: | Creación de viveros de empresas culturales
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        gratis_telecomunicaciones:
+          code: g1q14
+          type: singlechoice
+          sort_order: 14
+          question: | Gratuidad en el acceso a las telecomunicaciones
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        penalizar_pirateria:
+          code: g1q15
+          type: singlechoice
+          sort_order: 15
+          question: | Penalizar la piratería y regular el uso de internet para proteger los derechos de autor
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        organizar_eventos:
+          code: g1q16
+          type: singlechoice
+          sort_order: 16
+          question: | Organizar grandes eventos para atraer inversores y promover el turismo cultural
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        estatuto_laboral:
+          code: g1q17
+          type: singlechoice
+          sort_order: 17
+          question: | Crear un estatuto laboral específico para lxs trabajadorxs del sector cultural
+          answers:
+          answers:
+            muy_importante:
+              code: 1
+              answer: | muy importante
+              sort_order: 1
+              default: N
+            importante:
+              code: 2
+              answer: | importante
+              sort_order: 2
+              default: N
+            moderadamente_importante:
+              code: 3
+              answer: | moderademente importante
+              sort_order: 3
+              default: N
+            poco_importante:
+              code: 4
+              answer: | de poca importancia
+              sort_order: 4
+              default: N
+            sin_importancia:
+              code: 5
+              answer: | sin importancia
+              sort_order: 5
+              default: N
+
+        mejorar_vida_trabajo:
+          code: g1q18
+          type: textbox
+          sort_order: 18
+          question: | Dinos 3 medidas para mejorar la situación de vida/trabajo de lxs trabajadorxs del sector cultural
+
+        participacion_cultural:
+          code: g1q19
+          type: multiplechoice
+          sort_order: 19
+          question: | Dentro del ámbito cultural, has participado en el último año en:
+          answers:
+            sindicato:
+              code: 1
+              answer: | Un sindicato
+              sort_order: 1
+              default: N
+            asociacion_profesional:
+              code: 2
+              answer: | Asociación profesional
+              sort_order: 2
+              default: N
+            movimiento_social:
+              code: 3
+              answer: | Movimiento social
+              sort_order: 3
+              default: N
+            colectivo:
+              code: 4
+              answer: | Agrupación o colectivo artístico y cultural
+              sort_order: 4
+              default: N
+            otros:
+              code: 5
+              answer: | otros:
+              sort_order: 5
+              default: N
+              subquestions:
+                otra_participacion:
+                  code: g1q19a5s1
+                  type: textbox
+                  sort_order: 1
+                  question: | 
+                  validation: validate_sub_question
+
+        participacion_politica:
+          code: g1q20
+          type: multiplechoice
+          sort_order: 20
+          question: | Has participado en el último año en:
+          answers:
+            manifestacion:
+              code: 1
+              answer: | manifestación
+              sort_order: 1
+              default: N
+            acto_reivindicativo:
+              code: 2
+              answer: | acto reivindicativo
+              sort_order: 2
+              default: N
+            campana_online:
+              code: 3
+              answer: | campaña on line
+              sort_order: 3
+              default: N
+            otros:
+              code: 4
+              answer: | otros:
+              sort_order: 4
+              default: N
+              subquestions:
+                otra_participacion:
+                  code: g1q20a4s1
+                  type: textbox
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
+
+        valoracion_condiciones:
+          code: g1q21
+          type: singlechoice
+          sort_order: 21
+          question: | ¿Cómo valoras las condiciones de vida de lxs trabajadorxs del sector cultural?
+          answers:
+            pauperrima:
+              code: 1
+              answer: | Paupérrima
+              sort_order: 1
+              default: N
+            precaria:
+              code: 2
+              answer: | Precaria
+              sort_order: 2
+              default: N
+            normal:
+              code: 3
+              answer: | Normal
+              sort_order: 3
+              default: N
+            digna:
+              code: 4
+              answer: | Digna
+              sort_order: 4
+              default: N
+            excelente:
+              code: 5
+              answer: | Excelente
+              sort_order: 5
+              default: N
+
+        cultura:
+          header: | Valora la actuación de las administraciones en los siguientes ámbitos:
+          code: g1q22
+          type: singlechoice
+          sort_order: 22
+          question: | Cultura
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        vivienda:
+          code: g1q23
+          type: singlechoice
+          sort_order: 23
+          question: | Vivienda
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        inmigracion:
+          code: g1q24
+          type: singlechoice
+          sort_order: 24
+          question: | Inmigración
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        trabajo_economia:
+          code: g1q25
+          type: singlechoice
+          sort_order: 25
+          question: | Trabajo/Economía
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        sanidad:
+          code: g1q26
+          type: singlechoice
+          sort_order: 26
+          question: | Sanidad
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        genero:
+          code: g1q27
+          type: singlechoice
+          sort_order: 27
+          question: | Políticas de género
+          answers:
+            muy_buena:
+              code: 1
+              answer: | muy buena
+              sort_order: 1
+              default: N
+            buena:
+              code: 2
+              answer: | buena
+              sort_order: 2
+              default: N
+            aceptable:
+              code: 3
+              answer: | aceptable
+              sort_order: 3
+              default: N
+            mala:
+              code: 4
+              answer: | mala
+              sort_order: 4
+              default: N
+            muy_mala:
+              code: 5
+              answer: | muy mala
+              sort_order: 5
+              default: N
+
+        iniciativas:
+          code: g1q28
+          type: multiplechoice
+          sort_order: 28
+          question: | ¿Cuáles serían posibles iniciativas colectivas de lxs trabajadorxs del sector cultural?
+          help: Señala las que te parecen mas interesantes y añade tus propuestas
+          answers:
+            impulsar_plataforma:
+              code: 1
+              answer: | impulsar una plataforma andaluza
+              sort_order: 1
+              default: N
+            creacion_asociacion:
+              code: 2
+              answer: | creación de asociaciones sectoriales/gremiales
+              sort_order: 2
+              default: N
+            creacion_sindicato:
+              code: 3
+              answer: | creación de un sindicato
+              sort_order: 3
+              default: N
+            campanas:
+              code: 4
+              answer: | desarrollar campañas conjuntas de denuncia de las políticas culturales
+              sort_order: 4
+              default: N
+            festivales:
+              code: 5
+              answer: | constituir una red de festivales y encuentros de creadores fuera del circuito institucional
+              sort_order: 5
+              default: N
+            oficinas:
+              code: 6
+              answer: | constituir oficinas de información y recursos
+              sort_order: 6
+              default: N
+            espacios_online:
+              code: 7
+              answer: | espacios online de análisis critico de las políticas culturales
+              sort_order: 7
+              default: N
+            ocupar_espacios:
+              code: 8
+              answer: | ocupar y/o demandar espacios y equipamientos públicos para centros culturales de gestión colectiva
+              sort_order: 8
+              default: N
+            otras:
+              code: 9
+              answer: | otras:
+              sort_order: 9
+              default: N
+              subquestions:
+                otra_participacion:
+                  code: g1q28a9s1
+                  type: textbox
+                  sort_order: 1
+                  question: |
+                  validation: validate_sub_question
