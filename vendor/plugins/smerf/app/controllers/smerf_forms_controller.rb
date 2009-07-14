@@ -8,6 +8,8 @@
 #
 
 class SmerfFormsController < ApplicationController
+  unloadable
+  before_filter :require_user
   
   include Smerf
 

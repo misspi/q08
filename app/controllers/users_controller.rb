@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  # GET /users
-  # GET /users.xml
+  before_filter :require_user
+
   def index
     @users = User.all
 
@@ -8,10 +8,10 @@ class UsersController < ApplicationController
       format.html # index.html.erb
       format.xml  { render :xml => @users }
     end
+
   end
 
-  # GET /users/1
-  # GET /users/1.xml
+  # GET /users/1 GET /users/1.xml
   def show
     @user = User.find(params[:id])
 
@@ -21,8 +21,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users/new
-  # GET /users/new.xml
+  # GET /users/new GET /users/new.xml
   def new
     @user = User.new
 
@@ -37,8 +36,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  # POST /users
-  # POST /users.xml
+  # POST /users POST /users.xml
   def create
     @user = User.new(params[:user])
 
@@ -54,8 +52,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # PUT /users/1
-  # PUT /users/1.xml
+  # PUT /users/1 PUT /users/1.xml
   def update
     @user = User.find(params[:id])
 
@@ -71,8 +68,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/1
-  # DELETE /users/1.xml
+  # DELETE /users/1 DELETE /users/1.xml
   def destroy
     @user = User.find(params[:id])
     @user.destroy
@@ -82,4 +78,6 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+
 end

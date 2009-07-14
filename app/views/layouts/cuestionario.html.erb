@@ -13,9 +13,9 @@
       <div class="session">
         <% if current_user -%>
           Hola:  <%= current_user.name %>
-          <%= link_to qt(:user_session, :destroy), current_user_session, :method => :delete %>
+          <%= link_to qt(:user_session, :destroy), logout_path %>
         <% else -%>
-          <%= link_to qt(:user_session, :new), new_user_session_path %>
+          <%= link_to qt(:user_session, :new), login_path %>
         <% end -%>
       </div>
       

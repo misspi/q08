@@ -1,9 +1,6 @@
 
 class UserSessionsController < ApplicationController
 
-  def index
-    
-  end
 
   def new
     @user_session = UserSession.new
@@ -13,6 +10,7 @@ class UserSessionsController < ApplicationController
     @user_session = UserSession.new(params[:user_session])
     if @user_session.save
       flash[:notice] = qt(:user_session, :created)
+      self.smerf_user_id = current_user.id
       redirect_to root_path
     else
       render :action => :new
