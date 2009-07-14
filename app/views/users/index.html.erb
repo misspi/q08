@@ -1,0 +1,22 @@
+<%= title qt(:user, :index) %>
+
+<table>
+  <tr>
+    <th><%= qt(:user, :name) %></th>
+    <th><%= qt(:user, :email) %></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%=link_to user.name, user %></td>
+      <td><%=h user.email %></td>
+      <td><%=h user.password %></td>
+      <td><%= link_to qt(:user, :edit), edit_user_path(user) %></td>
+      <td><%= link_to qt(:user, :destroy), user, :confirm => qt(:user, :confirm_destroy), :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br />
+
+<%= link_to qt(:user, :new), new_user_path %>

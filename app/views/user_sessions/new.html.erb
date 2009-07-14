@@ -1,0 +1,21 @@
+
+<%= title qt(:user_session, :new) %>
+
+
+<% form_for @user_session do |form| %>
+  <%= form.error_messages %>
+
+  <p>
+    <%= form.label :email, qt(:user_session, :email) %>
+    <%= form.text_field :email %>
+  </p>
+  <p>
+    <%= form.label :password, qt(:user_session, :password) %>
+    <%= form.password_field :password %>
+  </p>
+  <p>
+    <label>&nbsp;</label>
+    <%= form.submit qt(:user_session, :create) %>
+  </p>
+
+<% end %>

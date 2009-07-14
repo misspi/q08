@@ -1,10 +1,27 @@
 es:
   user:
+    index: "Todos los usuarios registrados"
+    show: "Datos del usuario"
+    edit: "Editar datos de este usuario"
     new: "Crear un nuevo usuario"
-    username: "Nombre"
+    destroy: "Borrar este usuario"
+    confirm_destroy: "Estás a punto de borrar un usuario!!! Estás segura!!!??"
+    name: "Nombre"
     email: "Email"
     password: "Contraseña"
-    submit: "Enviar"
+    password_confirmation: "Repite contraseña"
+    create: "Crear usuario"
+    created: "Usuario creado."
+
+  user_session:
+    index: "Todas las sesiones de los usuarios"
+    new: "Entrar"
+    email: "Email"
+    password: "Contraseña"
+    create: "Entrar"
+    created: "Has entrado con éxito. Bienvenida!"
+    destroy: "Salir"
+    destroyed: "Adios!!!"
     
 
     

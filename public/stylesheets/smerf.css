@@ -16,6 +16,12 @@ margin:0;
     background-color: #eaf4fa;
               }
 
+/* FORMULARIOS */
+
+form p label {display: block; float: left; width: 10em; text-align: right; margin-right: 1em; }
+form p input[type=text], form p input[type=password] {border: 1px solid gray;}
+form p span.fieldWithErrors  input {border: 1px solid #c00; background-color: #FFEFEF;}
+
 /* Smerf form */
 /* -------------------------------------------------------------------------- */
 
