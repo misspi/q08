@@ -7,8 +7,14 @@ class ApplicationController < ActionController::Base
   include Smerf
   layout'cuestionario'
 
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  # Scrub sensitive parameters from your log filter_parameter_logging :password
 
+  helper_method :qt
+
+  private
+  def qt(*symbols)
+    last = symbols.pop
+    I18n.t(last, :scope => symbols)
+  end
 
 end

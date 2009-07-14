@@ -1,0 +1,10 @@
+es:
+  user:
+    new: "Crear un nuevo usuario"
+    username: "Nombre"
+    email: "Email"
+    password: "Contraseña"
+    submit: "Enviar"
+    
+
+    
